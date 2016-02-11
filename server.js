@@ -17,7 +17,7 @@ mongoose.connect('mongodb://navjot:abcxyz123@ds060968.mongolab.com:60968/cloudap
 
 require('./config/passport')(passport);
 
-// setting up the applicatio
+// setting up the application
 app.use(express.static(__dirname + '/views'));
 app.use(morgan('dev'));
 app.use(cookieParser());
